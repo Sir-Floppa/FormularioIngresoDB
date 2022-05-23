@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+
+:root {
+    --light-blue: #C2E3FF;
+    --bg-blue: #004E98;
+    --btn-blue: #002A52;
+    --btn-hl-blue: #001529;
+}
+
+* {
+    font-family: 'Ruda';
+    margin: 0;
+}
+
+header {
+    background-color: var(--bg-blue);
+    padding: 20px;
+    color: white;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+span, button {
+    background-color: var(--btn-blue);
+    padding: 10px;
+    margin-left: 30px;
+}
+
+span:hover, button:hover {
+    cursor: pointer;
+    background-color: var(--btn-hl-blue);
+}
+
+button {
+    color: white;
+    border: none;
+}
+
+form, table {
+    margin: 20px;
+    width: 470px;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+table, tr, th, td {
+    border: none;
+}
+
+th {
+    color: white;
+    background-color: var(--bg-blue);
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+    background-color: var(--light-blue);
+}
+
+section {
+    overflow: auto;
+}
+
+@media (max-width: 480px) {
+    form, table {
+        margin: 20px;
+        width: 430px;
+    }
+}
